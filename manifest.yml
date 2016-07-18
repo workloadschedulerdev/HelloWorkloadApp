@@ -1,0 +1,14 @@
+declared-services:
+  sampleJavaWorkloadScheduler:
+    label: WorkloadScheduler
+    plan: Shared
+
+applications:
+- name: hello-workload-app
+  memory: 512M
+  host: helloworkloadapp
+  memory: 512M
+  disk_quota: 512M
+  path: target/HelloWorkloadApp-1.0.0-SNAPSHOT.war
+  service:
+  - sampleJavaWorkloadScheduler
