@@ -43,6 +43,15 @@
         </executions>
       </plugin>
       <!-- attach test jar -->
+      
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-war-plugin</artifactId>
+            <configuration>
+              <webXml>${basedir}/src/webapp/WEB-INF/web.xml</webXml>
+              <warSourceDirectory>${basedir}/src/webapp</warSourceDirectory>
+            </configuration>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
