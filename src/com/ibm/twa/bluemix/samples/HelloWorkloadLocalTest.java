@@ -1,3 +1,12 @@
+/*********************************************************************
+ *
+ * Licensed Materials - Property of IBM
+ * Product ID = 5698-WSH
+ *
+ * Copyright IBM Corp. 2015. All Rights Reserved.
+ *
+ ********************************************************************/
+
 package com.ibm.twa.bluemix.samples;
 
 import java.io.OutputStream;
